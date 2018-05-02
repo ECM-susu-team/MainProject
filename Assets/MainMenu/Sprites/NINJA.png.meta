@@ -1,0 +1,277 @@
+fileFormatVersion: 2
+guid: 240a94e9bd8d1944ab773bdef83b17fe
+timeCreated: 1518548033
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: head
+    21300002: upper_arm_near
+    21300004: lower_arm_near
+    21300006: upper_arm_rear
+    21300008: lower_arm_rear
+    21300010: body
+    21300012: hip_rear
+    21300014: hip_near
+    21300016: leg_rear
+    21300018: leg_near
+    21300020: foot_groud
+    21300022: foot_step
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: head
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 433
+        width: 78
+        height: 93
+      alignment: 9
+      pivot: {x: 0.34423643, y: 0.20975946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: upper_arm_near
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 482
+        width: 106
+        height: 48
+      alignment: 9
+      pivot: {x: 0.14367604, y: 0.51457214}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lower_arm_near
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 487
+        width: 155
+        height: 43
+      alignment: 9
+      pivot: {x: 0.06929902, y: 0.4927794}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: upper_arm_rear
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 429
+        width: 109
+        height: 48
+      alignment: 9
+      pivot: {x: 0.13854924, y: 0.50326794}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lower_arm_rear
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 430
+        width: 155
+        height: 39
+      alignment: 9
+      pivot: {x: 0.07530862, y: 0.49203804}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: body
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 137
+        width: 85
+        height: 253
+      alignment: 9
+      pivot: {x: 0.47315893, y: 0.10998077}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: hip_rear
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 264
+        width: 62
+        height: 165
+      alignment: 9
+      pivot: {x: 0.4264034, y: 0.8664227}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: hip_near
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 264
+        width: 59
+        height: 165
+      alignment: 9
+      pivot: {x: 0.54833674, y: 0.8595091}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: leg_rear
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 130
+        width: 45
+        height: 130
+      alignment: 9
+      pivot: {x: 0.5506999, y: 0.8729375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: leg_near
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 130
+        width: 45
+        height: 130
+      alignment: 9
+      pivot: {x: 0.55069953, y: 0.86855}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: foot_groud
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 91
+        width: 72
+        height: 39
+      alignment: 9
+      pivot: {x: 0.22169945, y: 0.77891207}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: foot_step
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 37
+        width: 70
+        height: 53
+      alignment: 9
+      pivot: {x: 0.47137478, y: 0.7862517}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
