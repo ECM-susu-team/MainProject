@@ -159,6 +159,11 @@ public class MainAPI : MonoBehaviour {
         StartCoroutine(UploadSetLevelGrade(email, heroName, grade));
     }
 
+
+    public void Login(string email,string password)
+    {
+        StartCoroutine(UploadLogin(email, password));
+    }
     IEnumerator UploadLocationInfo(int locationIndex)
     {
         switch (locationIndex)
@@ -361,6 +366,32 @@ public class MainAPI : MonoBehaviour {
         yield return www;
     
         //inFirst = false;
+    }
+
+
+    IEnumerator UploadLogin(string email,string password)
+    {
+        WWWForm form = new WWWForm();
+
+        form.AddField("email", email);
+        form.AddField("password", password);
+
+        UnityWebRequest www = UnityWebRequest.Post("http://localhost:8080/api/login", form);
+        yield return www.SendWebRequest();
+
+
+        if (www.isNetworkError)
+        {
+            Debug.Log(www.error);
+        }
+        if (www.downloadHandler.text != "Bad Registration")
+        {
+
+            GlobalControl.Instance.email = www.downloadHandler.text;
+            GlobalControl.Instance.isAuth = true;
+
+            Debug.Log(GlobalControl.Instance.email);
+        }
     }
     public void Waiter()
     {

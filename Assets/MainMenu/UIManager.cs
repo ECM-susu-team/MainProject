@@ -7,6 +7,7 @@ public class UIManager : MonoBehaviour {
     public GameObject Play;
     public GameObject Login;
     public GameObject Reg;
+    public GameObject ExitAccount;
    // public Text usefulInfo;
     public Text username;
    // public Text score;
@@ -21,11 +22,20 @@ public class UIManager : MonoBehaviour {
             Login.SetActive(false);
             Reg.SetActive(false);
             Play.SetActive(true);
+            ExitAccount.SetActive(true);
             username.text = GlobalControl.Instance.email;
         }
         else
         {
             Play.SetActive(false);
+            ExitAccount.SetActive(false);
+            Login.SetActive(true);
+            Reg.SetActive(true);
         }
 	}
+
+    public void ExitAccountButton()
+    {
+        GlobalControl.Instance.isAuth = false;
+    }
 }

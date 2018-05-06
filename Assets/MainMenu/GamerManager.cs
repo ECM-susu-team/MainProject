@@ -26,4 +26,5 @@ public class GamerManager : MonoBehaviour
            //Login.SetActive(false);
         }
     }
+
 }
