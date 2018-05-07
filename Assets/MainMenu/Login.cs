@@ -46,15 +46,23 @@ public class Login : MonoBehaviour
 
     }
 
-    private void Update()
+    void FixedUpdate()
     {
-      
+      if(start == true)
+        {
+            i++;
+            if (i == 100)
+            {
+                start = false;
+                GetBack();
+            }
+        }
     }
     public void Clicked()
     {
         //StartCoroutine(Upload());
         api.Login(email.text, password.text);
-        GetBack();
+        start = true;
     }
 
     public void GetBack()

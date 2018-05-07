@@ -453,6 +453,7 @@
     <Compile Include="Assets\MainMenu\New.cs" />
     <Compile Include="Assets\MainMenu\NewBehaviourScript.cs" />
     <Compile Include="Assets\MainMenu\Registration.cs" />
+    <Compile Include="Assets\MainMenu\Scenses\GameProcess\TreeGrade.cs" />
     <Compile Include="Assets\MainMenu\Scenses\Japan\Japan.cs" />
     <Compile Include="Assets\MainMenu\Scenses\SaveDates.cs" />
     <Compile Include="Assets\MainMenu\Scenses\SceneCustom\ChoosingLocation.cs" />
