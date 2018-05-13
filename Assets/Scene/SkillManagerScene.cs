@@ -23,6 +23,8 @@ public class SkillManagerScene : MonoBehaviour
     int lvlForSkills = 1;
     bool flagLvlFirSkills = false;
 
+    public bool treeIsActive = false;
+
     void Start()
     {
         APIClass = GameObject.Find("API");
@@ -127,6 +129,7 @@ public class SkillManagerScene : MonoBehaviour
                 UnblockButton2.SetActive(true);
             if (unlockedAb[2] != true)
                 UnblockButton3.SetActive(true);
+            treeIsActive = true;
         }
         else
         {
@@ -209,6 +212,8 @@ public class SkillManagerScene : MonoBehaviour
         string third = levelAb[2].ToString();
         string grade = first + "-" + second + "-" + third;
         api.setLevelGrade(GlobalControl.Instance.email, GlobalControl.Instance.heroName, grade);
+
+        api.setTreeGrade(GlobalControl.Instance.email, GlobalControl.Instance.heroName, GlobalControl.Instance.TreeGrade);
     }
 
 }

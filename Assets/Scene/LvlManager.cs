@@ -6,10 +6,12 @@ using UnityEngine.UI;
 public class LvlManager : MonoBehaviour {
     GameObject WarriorClass;
     Warrior wrr;
+    public bool nextLvlTree;
 
     public int countLVL = 1, _lvlForUnblockSkills = 0, _lvlForSkills = 0;
     private float nextLvl = 100f;
     void Start () {
+        nextLvlTree = false;
         WarriorClass = GameObject.Find("character");
         wrr = WarriorClass.GetComponent<Warrior>();
     }
@@ -17,6 +19,7 @@ public class LvlManager : MonoBehaviour {
 	void Update () {
         if (wrr.pXP >= nextLvl)
         {
+            nextLvlTree = true;
             countLVL++;
             wrr.level = countLVL;
             wrr.pXP = 1f;

@@ -13,6 +13,8 @@ public class PlayerControl : MonoBehaviour {
 	GameObject WarriorClass;
 	GameObject Skmngr;
 	Warrior wrr;
+    GameObject GameTree;
+    TreeGrade treeGrade;
 
 	private float NearWeaponDelay = 0f;
 
@@ -24,6 +26,9 @@ public class PlayerControl : MonoBehaviour {
 		WarriorClass = GameObject.Find("character");
 		wrr = WarriorClass.GetComponent<Warrior> ();
 
+        GameTree = GameObject.Find("GameTree");
+        treeGrade = GameTree.GetComponent<TreeGrade>();
+
 		weapon = GameObject.Find ("ActivatedNearWeapon");
 
 
@@ -31,7 +36,16 @@ public class PlayerControl : MonoBehaviour {
 		Debug.Log ("Jump Force for controller: " + JumpForce + " - success");
 		speed = wrr.GetSpeed(); //Warrior.Instance.GetSpeed ();
 		Debug.Log ("Speed for controller: " + speed + " - success");
-	}
+
+        if (GlobalControl.Instance.TreeGrade == "1-1") treeGrade.InvokeRootNode();
+
+        if (GlobalControl.Instance.TreeGrade == "2-1") treeGrade.InvokeNode2();
+
+        if (GlobalControl.Instance.TreeGrade == "2-2") treeGrade.InvokeNode3();
+
+        Debug.Log(GlobalControl.Instance.TreeGrade);
+
+    }
 	void FixedUpdate()
 	{
 		CheckGroung ();

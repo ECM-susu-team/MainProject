@@ -32,7 +32,7 @@ public class Confirm : MonoBehaviour {
     public void ConfirmData()
     {
         GlobalControl.Instance.LevelGrade = api.getLevelGrade(GlobalControl.Instance.email, GlobalControl.Instance.heroName);
-      
+        GlobalControl.Instance.TreeGrade = api.getTreeGrade(GlobalControl.Instance.email, GlobalControl.Instance.heroName);
     }
 
     void setRect()

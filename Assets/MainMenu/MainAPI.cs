@@ -150,15 +150,19 @@ public class MainAPI : MonoBehaviour {
         return levelGrade;
     }
 
-    public void getTreeGrade(string email,string heroName)
+    public string getTreeGrade(string email,string heroName)
     {
         StartCoroutine(UploadTreeGrade(email, heroName));
+        return treeGrade;
     }
     public void setLevelGrade(string email,string heroName,string grade)
     {
         StartCoroutine(UploadSetLevelGrade(email, heroName, grade));
     }
-
+    public void setTreeGrade(string email, string heroName, string grade)
+    {
+        StartCoroutine(UploadSetTreeGrade(email, heroName, grade));
+    }
 
     public void Login(string email,string password)
     {
@@ -365,6 +369,30 @@ public class MainAPI : MonoBehaviour {
 
         yield return www;
     
+        //inFirst = false;
+    }
+
+    IEnumerator UploadSetTreeGrade(string email, string heroName, string grade)
+    {
+        //inFirst = true;
+        WWW www;
+        Hashtable postHeader = new Hashtable();
+        postHeader.Add("Content-Type", "application/json");
+
+        UserHeroGrade userHeroGrade = new UserHeroGrade();
+        userHeroGrade.hero_name = heroName;
+        userHeroGrade.user_email = email;
+        userHeroGrade.grade = grade;
+        // convert json string to byte
+        string json = JsonUtility.ToJson(userHeroGrade);
+        var formData = System.Text.Encoding.UTF8.GetBytes(json);
+        //Debug.Log("IN GRADE");
+        //Debug.Log(userAndHero);
+        //Debug.Log(json);
+        www = new WWW("http://localhost:8080/api/setTreeGrade", formData, postHeader);
+
+        yield return www;
+
         //inFirst = false;
     }
 

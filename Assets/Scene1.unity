@@ -6125,6 +6125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6a0bfb9e54778049bd8278ae71910c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextLvlTree: 0
   countLVL: 1
   _lvlForUnblockSkills: 0
   _lvlForSkills: 0
@@ -6177,6 +6178,7 @@ MonoBehaviour:
   unlockedAb: 
   levelAb: 
   _level: 0
+  treeIsActive: 0
 --- !u!1001 &676688417
 Prefab:
   m_ObjectHideFlags: 0
@@ -13484,6 +13486,8 @@ MonoBehaviour:
   stick1: {fileID: 1346014085}
   stick2: {fileID: 911216890}
   stick3: {fileID: 1672193947}
+  lvltext: {fileID: 1472357861}
+  treelevel: 0
 --- !u!4 &1398079298
 Transform:
   m_ObjectHideFlags: 0
@@ -18931,6 +18935,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6a0bfb9e54778049bd8278ae71910c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextLvlTree: 0
   countLVL: 1
   _lvlForUnblockSkills: 0
   _lvlForSkills: 0
@@ -19071,6 +19076,7 @@ MonoBehaviour:
   unlockedAb: 
   levelAb: 
   _level: 0
+  treeIsActive: 0
 --- !u!1 &2104271483
 GameObject:
   m_ObjectHideFlags: 0
